@@ -3,7 +3,7 @@ CREATE TABLE tutor (
     nome VARCHAR(45),
     telefone VARCHAR(45)
 );
- 
+
 CREATE TABLE animal (
     id_animal INT PRIMARY KEY,
     nome VARCHAR(45),
