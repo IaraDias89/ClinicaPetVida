@@ -47,3 +47,19 @@ As capturas de tela das execuções do sistema foram salvas no diretório `evide
 622e16c parte-d: codigo com defeitos
 
 
+
+## Parte F — Defesa escrita do seu código
+
+### G.1 Análise do método buscarPorId
+
+```java
+public Animal buscarPorId(Integer id) {
+    String sql = "SELECT a.id, a.nome, a.especie, a.idade, t.id AS tutor_id, t.nome AS tutor_nome " +
+                 "FROM animal a JOIN tutor t ON a.tutor_id = t.id WHERE a.id = ?";
+    
+    return jdbcTemplate.queryForObject(sql, (rs, rowNum) -> {
+        Tutor tutor = new Tutor(rs.getInt("tutor_id"), rs.getString("tutor_nome"));
+        return new Animal(rs.getInt("id"), rs.getString("nome"), rs.getString("especie"), rs.getInt("idade"), tutor);
+    }, id);
+}
+
