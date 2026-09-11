@@ -39,6 +39,11 @@ As capturas de tela das execuções do sistema foram salvas no diretório `evide
 ![Console H2](evidencias/h2_console.png)
 
 
-# Parte C (Depuração)
+# Parte D (Depuração)
 
-#
+### D.1 Saída do Git Log
+```text
+6e3bdfb (HEAD -> main, origin/main) parte-d: defeitos corrigidos
+622e16c parte-d: codigo com defeitos
+
+
