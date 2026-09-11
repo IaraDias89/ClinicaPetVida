@@ -37,3 +37,8 @@ As capturas de tela das execuções do sistema foram salvas no diretório `evide
 
 # 4. Console H2 (Consulta SQL)
 ![Console H2](evidencias/h2_console.png)
+
+
+# Parte C (Depuração)
+
+#
